@@ -6,7 +6,7 @@ async function donk() {
 
 browser.messageDisplayScripts.register({
     css: [{ file: "display.css" }],
-    js: [{ code: toggle }],
+    js: [{ code: toggle }, { file: "preprocess.js" }],
 });
 
 browser.browserAction.onClicked.addListener(donk);
