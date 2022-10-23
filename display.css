@@ -1,0 +1,14 @@
+:root {
+    --inverted: invert(100%) hue-rotate(180deg) !important;
+}
+
+@media not print {
+    body.donk {
+        filter: var(--inverted);
+        background: #1B1B1B !important;
+    }
+
+    body.donk img {
+        filter: var(--inverted);
+    }
+}
